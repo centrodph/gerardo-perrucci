@@ -1,6 +1,6 @@
 ---
-slug: machine-learning-tools
-title: "My Machine Learning Environment: Python, R, RStudio, and Colab"
+slug: machine-learning/machine-learning-tools
+title: "Machine Learning Environment: Python, R, RStudio, and Colab"
 authors: [me]
 tags: [Machine Learning, python, R, RStudio, Colab]
 ---
@@ -9,17 +9,17 @@ Hi everyone! I'm venturing into the exciting world of machine learning (ML), and
 
 ## Essential Software:
 
-**Python:** As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community. You've already installed it, which is fantastic! You can download Python from the official website:
+**Python:** As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community.
 
 Python download: https://www.python.org/downloads/
 
-**R:** Another powerful language specifically designed for statistics and data analysis. R offers a rich ecosystem of packages specifically tailored for ML tasks. You can download R from the official website:
+**R:** Another powerful language specifically designed for statistics and data analysis. R offers a rich ecosystem of packages specifically tailored for ML tasks.
 
-R for Windows/Mac/Linux: https://www.r-project.org/
+You can download R from the official website: https://www.r-project.org/
 
-**RStudio:** An integrated development environment (IDE) built specifically for R. It provides a user-friendly interface for writing, running, and managing your R code. It also offers features like code completion, syntax highlighting, and debugging tools, making your R experience smoother. Download RStudio from the official website:
+**RStudio:** An integrated development environment (IDE) built specifically for R. It provides a user-friendly interface for writing, running, and managing your R code. It also offers features like code completion, syntax highlighting, and debugging tools, making your R experience smoother.
 
-RStudio download: https://www.rstudio.com/products/rstudio/
+Download RStudio from the official website: https://www.rstudio.com/products/rstudio/
 
 ### Cloud Platform:
 
