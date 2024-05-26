@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"My Machine Learning Environment: Python, R, RStudio, and Colab","permalink":"/sites/blog/machine-learning-tools","unlisted":false}]}')}}]);

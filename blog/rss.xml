@@ -9,23 +9,23 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[My Machine Learning Environment: Python, R, RStudio, and Colab]]></title>
-            <link>https://centrodph.github.io/sites/blog/machine-learning-tools</link>
-            <guid>https://centrodph.github.io/sites/blog/machine-learning-tools</guid>
+            <title><![CDATA[Machine Learning Environment: Python, R, RStudio, and Colab]]></title>
+            <link>https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools</link>
+            <guid>https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools</guid>
             <pubDate>Sun, 26 May 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Hi everyone! I'm venturing into the exciting world of machine learning (ML), and this article details the tools I'm using to get started.]]></description>
             <content:encoded><![CDATA[<p>Hi everyone! I'm venturing into the exciting world of machine learning (ML), and this article details the tools I'm using to get started.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-software">Essential Software:<a href="https://centrodph.github.io/sites/blog/machine-learning-tools#essential-software" class="hash-link" aria-label="Direct link to Essential Software:" title="Direct link to Essential Software:">​</a></h2>
-<p><strong>Python:</strong> As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community. You've already installed it, which is fantastic! You can download Python from the official website:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-software">Essential Software:<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#essential-software" class="hash-link" aria-label="Direct link to Essential Software:" title="Direct link to Essential Software:">​</a></h2>
+<p><strong>Python:</strong> As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community.</p>
 <p>Python download: <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">https://www.python.org/downloads/</a></p>
-<p><strong>R:</strong> Another powerful language specifically designed for statistics and data analysis. R offers a rich ecosystem of packages specifically tailored for ML tasks. You can download R from the official website:</p>
-<p>R for Windows/Mac/Linux: <a href="https://www.r-project.org/" target="_blank" rel="noopener noreferrer">https://www.r-project.org/</a></p>
-<p><strong>RStudio:</strong> An integrated development environment (IDE) built specifically for R. It provides a user-friendly interface for writing, running, and managing your R code. It also offers features like code completion, syntax highlighting, and debugging tools, making your R experience smoother. Download RStudio from the official website:</p>
-<p>RStudio download: <a href="https://www.rstudio.com/products/rstudio/" target="_blank" rel="noopener noreferrer">https://www.rstudio.com/products/rstudio/</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-platform">Cloud Platform:<a href="https://centrodph.github.io/sites/blog/machine-learning-tools#cloud-platform" class="hash-link" aria-label="Direct link to Cloud Platform:" title="Direct link to Cloud Platform:">​</a></h3>
+<p><strong>R:</strong> Another powerful language specifically designed for statistics and data analysis. R offers a rich ecosystem of packages specifically tailored for ML tasks.</p>
+<p>You can download R from the official website: <a href="https://www.r-project.org/" target="_blank" rel="noopener noreferrer">https://www.r-project.org/</a></p>
+<p><strong>RStudio:</strong> An integrated development environment (IDE) built specifically for R. It provides a user-friendly interface for writing, running, and managing your R code. It also offers features like code completion, syntax highlighting, and debugging tools, making your R experience smoother.</p>
+<p>Download RStudio from the official website: <a href="https://www.rstudio.com/products/rstudio/" target="_blank" rel="noopener noreferrer">https://www.rstudio.com/products/rstudio/</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-platform">Cloud Platform:<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#cloud-platform" class="hash-link" aria-label="Direct link to Cloud Platform:" title="Direct link to Cloud Platform:">​</a></h3>
 <p><strong>Google Colab:</strong> This fantastic platform offered by Google allows you to run Python or R code directly within your web browser. Colab provides free access to powerful hardware with GPUs (graphical processing units) that can significantly accelerate your ML computations, especially when dealing with large datasets. It's a great option if you don't have a powerful computer or prefer a cloud-based environment.</p>
 <p>Access Google Colab at: Google Colab: <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer">https://colab.research.google.com/</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps:<a href="https://centrodph.github.io/sites/blog/machine-learning-tools#next-steps" class="hash-link" aria-label="Direct link to Next Steps:" title="Direct link to Next Steps:">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps:<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#next-steps" class="hash-link" aria-label="Direct link to Next Steps:" title="Direct link to Next Steps:">​</a></h3>
 <p>I'll delve into exploring some popular Python libraries for machine learning, such as NumPy, pandas, scikit-learn, and TensorFlow.</p>
 <p>Bonus Tip: Jupyter Notebook is a web-based IDE that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. It's a great tool for documenting your ML projects and experiments.</p>
 <p>You can download Jupyter Notebook: <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer">https://jupyter.org/</a></p>]]></content:encoded>
@@ -34,6 +34,41 @@
             <category>R</category>
             <category>RStudio</category>
             <category>Colab</category>
+        </item>
+        <item>
+            <title><![CDATA[New React Compiler in React 19 ]]></title>
+            <link>https://centrodph.github.io/sites/blog/react/new-compiler-react-19</link>
+            <guid>https://centrodph.github.io/sites/blog/react/new-compiler-react-19</guid>
+            <pubDate>Sun, 26 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The new React compiler introduced in React 19 it will significantly improve React development.]]></description>
+            <content:encoded><![CDATA[<p><strong>The new React compiler introduced in React 19 it will significantly improve React development.</strong></p>
+<p>The compiler is a novel tool that can automatically optimize your React application. It accomplishes this by thoroughly comprehending the code and applying optimizations based on React's principles. This can result in performance improvements, particularly for intricate applications.</p>
+<p>The compiler is still in its experimental phase, but it has the potential to revolutionize React development. Is interested to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.</p>
+<p>Some bullet points to consider:</p>
+<ul>
+<li>
+<p>A new experimental tool called the React compiler can automatically optimize your React application.</p>
+</li>
+<li>
+<p>It accomplishes this by thoroughly comprehending the code and applying optimizations based on React's principles.</p>
+</li>
+<li>
+<p>This can result in performance improvements, particularly for intricate applications.</p>
+</li>
+<li>
+<p>The compiler is still in its experimental phase, but it has the potential to revolutionize React development.</p>
+</li>
+<li>
+<p>It will be interesting to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.</p>
+</li>
+</ul>
+<p>Sure, according to the document (<a href="https://react.dev/learn/react-compiler" target="_blank" rel="noopener noreferrer">https://react.dev/learn/react-compiler</a>), the React compiler can optimize your React application in a few specific cases.</p>
+<p><strong>It can automatically memoize certain values or groups of values within your components and hooks.</strong> This means it can cache the results of functions so that they don't have to be recalculated every time the component renders if the inputs haven't changed.expand_more</p>
+<p>In addition, the compiler can skip over re-rendering components that haven't changed. For instance, if a parent component re-renders, it won't necessarily force all of its child components to re-render as well. Finally, is important to note that the code is expected to follow the <strong>React Rules</strong> in order to work properly with the compiler. Learn more about the React Rules: <a href="https://react.dev/reference/rules" target="_blank" rel="noopener noreferrer">https://react.dev/reference/rules</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xo-ddmNGjY8?si=EfLo6F1IM1O7PUll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content:encoded>
+            <category>React</category>
+            <category>Compiler</category>
+            <category>React 19</category>
         </item>
     </channel>
 </rss>
