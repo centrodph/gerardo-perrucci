@@ -47,6 +47,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
@@ -108,7 +112,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: prismThemes.nightOwl,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,

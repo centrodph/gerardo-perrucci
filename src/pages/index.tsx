@@ -40,7 +40,6 @@ function HomepageHeader() {
             target="_blank"
           >
             <svg
-              height="40px"
               xmlns="http://www.w3.org/2000/svg"
               fillRule="evenodd"
               strokeLinejoin="round"
