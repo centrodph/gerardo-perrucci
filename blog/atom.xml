@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://centrodph.github.io/sites/blog</id>
+    <id>https://centrodph.github.io/gerardo-perrucci/blog</id>
     <title>Gerardo Perrucci Blog</title>
     <updated>2024-05-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://centrodph.github.io/sites/blog"/>
+    <link rel="alternate" href="https://centrodph.github.io/gerardo-perrucci/blog"/>
     <subtitle>Gerardo Perrucci Blog</subtitle>
-    <icon>https://centrodph.github.io/sites/img/2073951.jpeg</icon>
+    <icon>https://centrodph.github.io/gerardo-perrucci/img/2073951.jpeg</icon>
     <entry>
         <title type="html"><![CDATA[Machine Learning Environment: Python, R, RStudio, and Colab]]></title>
-        <id>https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools</id>
-        <link href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools"/>
+        <id>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools</id>
+        <link href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools"/>
         <updated>2024-05-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi everyone! I'm venturing into the exciting world of machine learning (ML), and this article details the tools I'm using to get started.]]></summary>
         <content type="html"><![CDATA[<p>Hi everyone! I'm venturing into the exciting world of machine learning (ML), and this article details the tools I'm using to get started.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-software">Essential Software<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#essential-software" class="hash-link" aria-label="Direct link to Essential Software" title="Direct link to Essential Software">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-software">Essential Software<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools#essential-software" class="hash-link" aria-label="Direct link to Essential Software" title="Direct link to Essential Software">​</a></h2>
 <p><strong>Python:</strong> As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community.</p>
 <p>Python download: <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">https://www.python.org/downloads/</a></p>
 <p><strong>R:</strong> Another powerful language specifically designed for statistics and data analysis. R offers a rich ecosystem of packages specifically tailored for ML tasks.</p>
 <p>You can download R from the official website: <a href="https://www.r-project.org/" target="_blank" rel="noopener noreferrer">https://www.r-project.org/</a></p>
 <p><strong>RStudio:</strong> An integrated development environment (IDE) built specifically for R. It provides a user-friendly interface for writing, running, and managing your R code. It also offers features like code completion, syntax highlighting, and debugging tools, making your R experience smoother.</p>
 <p>Download RStudio from the official website: <a href="https://www.rstudio.com/products/rstudio/" target="_blank" rel="noopener noreferrer">https://www.rstudio.com/products/rstudio/</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-platform">Cloud Platform<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#cloud-platform" class="hash-link" aria-label="Direct link to Cloud Platform" title="Direct link to Cloud Platform">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-platform">Cloud Platform<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools#cloud-platform" class="hash-link" aria-label="Direct link to Cloud Platform" title="Direct link to Cloud Platform">​</a></h3>
 <p><strong>Google Colab:</strong> This fantastic platform offered by Google allows you to run Python or R code directly within your web browser. Colab provides free access to powerful hardware with GPUs (graphical processing units) that can significantly accelerate your ML computations, especially when dealing with large datasets. It's a great option if you don't have a powerful computer or prefer a cloud-based environment.</p>
 <p>Access Google Colab at: Google Colab: <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer">https://colab.research.google.com/</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="https://centrodph.github.io/sites/blog/machine-learning/machine-learning-tools#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h3>
 <p>I'll delve into exploring some popular Python libraries for machine learning, such as NumPy, pandas, scikit-learn, and TensorFlow.</p>
 <p>Bonus Tip: Jupyter Notebook is a web-based IDE that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. It's a great tool for documenting your ML projects and experiments.</p>
 <p>You can download Jupyter Notebook: <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer">https://jupyter.org/</a></p>]]></content>
@@ -40,8 +40,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New React Compiler in React 19 ]]></title>
-        <id>https://centrodph.github.io/sites/blog/react/new-compiler-react-19</id>
-        <link href="https://centrodph.github.io/sites/blog/react/new-compiler-react-19"/>
+        <id>https://centrodph.github.io/gerardo-perrucci/blog/react/new-compiler-react-19</id>
+        <link href="https://centrodph.github.io/gerardo-perrucci/blog/react/new-compiler-react-19"/>
         <updated>2024-05-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The new React compiler introduced in React 19 it will significantly improve React development.]]></summary>
         <content type="html"><![CDATA[<p><strong>The new React compiler introduced in React 19 it will significantly improve React development.</strong></p>
