@@ -36,7 +36,7 @@ function HomepageHeader() {
 
           <Link
             className="button-svg"
-            to="https://www.linkedin.com/in/gerardoperrucci/"
+            to="https://twitter.com/GerardoPerrucci"
             target="_blank"
           >
             <svg
