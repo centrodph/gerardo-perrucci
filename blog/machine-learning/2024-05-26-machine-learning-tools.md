@@ -7,7 +7,7 @@ tags: [Machine Learning, python, R, RStudio, Colab]
 
 Hi everyone! I'm venturing into the exciting world of machine learning (ML), and this article details the tools I'm using to get started.
 
-## Essential Software:
+## Essential Software
 
 **Python:** As a widely used general-purpose language, Python is a popular choice for ML due to its readability, extensive libraries, and large community.
 
@@ -21,13 +21,13 @@ You can download R from the official website: https://www.r-project.org/
 
 Download RStudio from the official website: https://www.rstudio.com/products/rstudio/
 
-### Cloud Platform:
+### Cloud Platform
 
 **Google Colab:** This fantastic platform offered by Google allows you to run Python or R code directly within your web browser. Colab provides free access to powerful hardware with GPUs (graphical processing units) that can significantly accelerate your ML computations, especially when dealing with large datasets. It's a great option if you don't have a powerful computer or prefer a cloud-based environment.
 
 Access Google Colab at: Google Colab: https://colab.research.google.com/
 
-### Next Steps:
+### Next Steps
 
 I'll delve into exploring some popular Python libraries for machine learning, such as NumPy, pandas, scikit-learn, and TensorFlow.
 
