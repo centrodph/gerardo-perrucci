@@ -18,7 +18,7 @@ In recent years, while continuing to excel in front-end development with leading
 
 ### Technology Expertise
 
-### Languages:
+### Languages
 
 - JavaScript: Extensive experience in building dynamic, responsive web applications and frameworks such as React, Angular, and Node.js. Proficient in ES6+ features and asynchronous programming.
 
@@ -30,7 +30,7 @@ In recent years, while continuing to excel in front-end development with leading
 
 - Python: Skilled in Python for scripting, automation, and data visualization projects. Personal experience with libraries such as pandas, NumPy, and Matplotlib.
 
-### Frameworks:
+### Frameworks
 
 - React/React Native: Expertise in building high-performance, interactive user interfaces for web and mobile applications.
 
@@ -42,13 +42,13 @@ In recent years, while continuing to excel in front-end development with leading
 
 - Symfony: Experience in developing robust PHP applications with Symfony, following best practices and design patterns.
 
-### Databases:
+### Databases
 
 - SQL Server: Skilled in managing and optimizing SQL Server databases, including stored procedures and performance tuning.
 
 - PostgreSQL: Proficient in using PostgreSQL for complex queries, data integrity, and performance optimization.
 
-### ORM:
+### ORM
 
 - Doctrine: Experience with Doctrine ORM for PHP, facilitating database interactions and ensuring data integrity.
 
@@ -56,13 +56,13 @@ In recent years, while continuing to excel in front-end development with leading
 
 - JPA: Proficient in Java Persistence API (JPA) for managing relational data in Java applications.
 
-### Source Control:
+### Source Control
 
 - Git: Extensive experience with Git for version control, branching, and merging strategies to ensure code quality and collaboration.
 
 - TFS: Skilled in using Team Foundation Server (TFS) for source control, build automation, and continuous integration.
 
-#### Others:
+#### Others
 
 - SVN: Proficient in using Subversion (SVN) for version control and managing code repositories.
 

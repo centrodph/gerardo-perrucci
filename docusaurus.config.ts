@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Gerardo Perrucci",
   tagline: "Software Engineer",
-  favicon: "https://avatars.githubusercontent.com/u/2073951?v=4",
+  favicon: "img/2073951.jpeg",
 
   // Set the production url of your site here
   url: "https://centrodph.github.io",
@@ -35,17 +35,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -61,7 +53,7 @@ const config: Config = {
       title: "GP",
       logo: {
         alt: "Gerardo Perrucci Website",
-        src: "img/logo.svg",
+        src: "img/2073951.jpeg",
       },
       items: [
         {
