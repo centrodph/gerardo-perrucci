@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Gerardo Perrucci",
   tagline: "Software Engineer",
-  favicon: "img/favicon.ico",
+  favicon: "https://avatars.githubusercontent.com/u/2073951?v=4",
 
   // Set the production url of your site here
   url: "https://centrodph.github.io",
