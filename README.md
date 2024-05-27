@@ -1,41 +1,8 @@
-# Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+<a href="https://github.com/centrodph/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=centrodph" />
+</a>
+<a href="https://centrodph.github.io/gerardo-perrucci">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=centrodph&layout=compact&langs_count=8&card_width=320" />
+</a>
