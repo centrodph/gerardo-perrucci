@@ -9,6 +9,8 @@ tags: [Machine Learning, Data Preprocessing, Feature Scaling]
 
 Imagine you're a teacher and your students are working on a group project. One student is a math whiz, another excels at writing, and a third is a history buff. If you grade each section based on the individual's absolute strengths, the math whiz would dominate the score, even if the writing and history were excellent. This is similar to what can happen in machine learning with features (data points) on vastly different scales.
 
+![Machine Learning Feature Scaling Source: someka.net](./ml-feature-scaling.webp)
+
 **Feature scaling** is a data pre-processing technique that addresses this issue. It essentially standardizes the range of features in your dataset, ensuring all features contribute equally during model training. Let's delve deeper into why and how this works.
 
 ### Why Scale?

@@ -52,7 +52,7 @@ const config: Config = {
       disableSwitch: false,
     },
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    // image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "GP",
       logo: {
