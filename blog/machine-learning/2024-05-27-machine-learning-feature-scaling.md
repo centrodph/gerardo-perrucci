@@ -1,8 +1,9 @@
 ---
-slug: machine-learning/machine-learning-process
+slug: machine-learning/machine-learning-feature-scaling
 title: "Machine Learning: Feature Scaling"
 authors: [me]
 tags: [Machine Learning, Data Preprocessing, Feature Scaling]
+image: ./ml-feature-scaling.webp
 ---
 
 # Feature Scaling in Machine Learning: Keeping Your Data on the Same Page
