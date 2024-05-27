@@ -1,15 +1,17 @@
 ---
 slug: react/new-compiler-react-19
-title: "New React Compiler in React 19 "
+title: "New React Compiler in React 19"
 authors: [me]
 tags: [React, Compiler, React 19]
 ---
 
 **The new React compiler introduced in React 19 it will significantly improve React development.**
 
-The compiler is a novel tool that can automatically optimize your React application. It accomplishes this by thoroughly comprehending the code and applying optimizations based on React's principles. This can result in performance improvements, particularly for intricate applications.
+React's new compiler is an innovative tool designed to automatically optimize your React applications. By deeply understanding your code, the compiler applies optimizations grounded in React’s core principles. These optimizations can lead to significant performance enhancements, especially for complex applications.
 
-The compiler is still in its experimental phase, but it has the potential to revolutionize React development. Is interested to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.
+Currently in its experimental phase, the new compiler has the potential to revolutionize React development. It's particularly interesting to see how it will interact with the `inline` optimization technique used in React like memo, useMemo useCallback.
+
+The ongoing development and integration of the compiler promise exciting advancements in the efficiency and performance of React applications. As the tool matures, it could become a game-changer for developers seeking to build faster, more efficient applications.
 
 Some bullet points to consider:
 
@@ -21,11 +23,11 @@ Some bullet points to consider:
 
     - The compiler is still in its experimental phase, but it has the potential to revolutionize React development.
 
-    - It will be interesting to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.
+    - It will be interesting to see how it affects the `inline` optimization technique used in React like memo, useMemo useCallback.
 
 Sure, according to the document (https://react.dev/learn/react-compiler), the React compiler can optimize your React application in a few specific cases.
 
-**It can automatically memoize certain values or groups of values within your components and hooks.** This means it can cache the results of functions so that they don't have to be recalculated every time the component renders if the inputs haven't changed.expand_more
+**It can automatically memoize certain values or groups of values within your components and hooks.** This means it can cache the results of functions so that they don't have to be recalculated every time the component renders if the inputs haven't changed.
 
 In addition, the compiler can skip over re-rendering components that haven't changed. For instance, if a parent component re-renders, it won't necessarily force all of its child components to re-render as well. Finally, is important to note that the code is expected to follow the **React Rules** in order to work properly with the compiler. Learn more about the React Rules: https://react.dev/reference/rules
 
