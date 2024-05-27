@@ -2,11 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://centrodph.github.io/gerardo-perrucci/blog</id>
     <title>Gerardo Perrucci Blog</title>
-    <updated>2024-05-26T00:00:00.000Z</updated>
+    <updated>2024-05-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://centrodph.github.io/gerardo-perrucci/blog"/>
     <subtitle>Gerardo Perrucci Blog</subtitle>
     <icon>https://centrodph.github.io/gerardo-perrucci/img/2073951.jpeg</icon>
+    <entry>
+        <title type="html"><![CDATA[Machine Learning Process: A Comprehensive Guide]]></title>
+        <id>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process</id>
+        <link href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process"/>
+        <updated>2024-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Machine learning (ML) has become a cornerstone of modern technology, driving advancements in various fields such as healthcare, finance, and transportation. To build effective ML models, it's essential to understand the three main steps in the machine learning process: Data Preprocessing, Modeling, and Evaluation. This article breaks down these steps, detailing the sub-steps involved and providing references for further reading and understanding.]]></summary>
+        <content type="html"><![CDATA[<p>Machine learning (ML) has become a cornerstone of modern technology, driving advancements in various fields such as healthcare, finance, and transportation. To build effective ML models, it's essential to understand the three main steps in the machine learning process: Data Preprocessing, Modeling, and Evaluation. This article breaks down these steps, detailing the sub-steps involved and providing references for further reading and understanding.</p>
+<p><img decoding="async" loading="lazy" alt="Machine Learning Process" src="https://centrodph.github.io/gerardo-perrucci/assets/images/ml-process-52fb963fdb615006e0c3bd3cfb5b3f50.png" width="1600" height="800" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-data-preprocessing">1. Data Preprocessing<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#1-data-preprocessing" class="hash-link" aria-label="Direct link to 1. Data Preprocessing" title="Direct link to 1. Data Preprocessing">​</a></h2>
+<p>Data preprocessing is the first and arguably the most crucial step in the machine learning pipeline. This step ensures that the data is clean, consistent, and suitable for the modeling process.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
+<ol>
+<li><strong>Data Collection</strong>: Gathering relevant data from various sources. This can include databases, APIs, and web scraping.</li>
+<li><strong>Data Cleaning</strong>: Removing or correcting any inaccuracies in the data, such as missing values, outliers, and duplicates.</li>
+<li><strong>Data Transformation</strong>: Converting data into a suitable format for analysis, which might involve normalization, standardization, or encoding categorical variables.</li>
+<li><strong>Data Splitting</strong>: Dividing the data into training, validation, and test sets to evaluate the model's performance.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/preprocessing.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Data Preprocessing</a></li>
+<li><a href="https://www.kaggle.com/learn/data-cleaning" target="_blank" rel="noopener noreferrer">Kaggle Data Preprocessing Tutorial</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-modeling">2. Modeling<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#2-modeling" class="hash-link" aria-label="Direct link to 2. Modeling" title="Direct link to 2. Modeling">​</a></h2>
+<p>Once the data is preprocessed, the next step is to build and train the machine learning model. This involves selecting the appropriate algorithm and fine-tuning it to achieve the best performance.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps-1">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps-1" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
+<ol>
+<li><strong>Algorithm Selection</strong>: Choosing a machine learning algorithm based on the problem type (e.g., regression, classification, clustering).</li>
+<li><strong>Model Training</strong>: Feeding the training data into the algorithm to learn the underlying patterns and relationships.</li>
+<li><strong>Hyperparameter Tuning</strong>: Adjusting the algorithm's parameters to optimize performance. This can be done using techniques like grid search or random search.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references-1">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references-1" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+<ul>
+<li><a href="https://scikit-learn.org/stable/supervised_learning.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Supervised Learning</a></li>
+<li><a href="https://www.tensorflow.org/guide/keras/train_and_evaluate" target="_blank" rel="noopener noreferrer">TensorFlow Model Training Guide</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-evaluation">3. Evaluation<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#3-evaluation" class="hash-link" aria-label="Direct link to 3. Evaluation" title="Direct link to 3. Evaluation">​</a></h2>
+<p>Evaluation is the final step in the machine learning process, where the model's performance is assessed to ensure it meets the desired criteria. This involves using various metrics to measure the accuracy, precision, recall, and other relevant aspects of the model.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps-2">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps-2" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
+<ol>
+<li><strong>Model Validation</strong>: Using the validation set to tune the model and prevent overfitting.</li>
+<li><strong>Performance Metrics</strong>: Calculating metrics such as accuracy, precision, recall, F1 score, and AUC-ROC to evaluate the model's effectiveness.</li>
+<li><strong>Cross-Validation</strong>: Implementing techniques like k-fold cross-validation to ensure the model's robustness and reliability.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references-2">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references-2" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Model Evaluation</a></li>
+<li><a href="https://www.youtube.com/watch?v=85dtiMz9tSo" target="_blank" rel="noopener noreferrer">YouTube Video on Model Evaluation Metrics</a></li>
+</ul>
+<p>Understanding the machine learning process is fundamental to developing effective models that can make accurate predictions and provide valuable insights.</p>]]></content>
+        <author>
+            <name>Gerardo Perrucci</name>
+            <uri>https://github.com/centrodph</uri>
+        </author>
+        <category label="Machine Learning" term="Machine Learning"/>
+        <category label="Data Preprocessing" term="Data Preprocessing"/>
+        <category label="Modeling" term="Modeling"/>
+        <category label="Evaluation" term="Evaluation"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Machine Learning Environment: Python, R, RStudio, and Colab]]></title>
         <id>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-tools</id>
@@ -39,14 +97,15 @@
         <category label="Colab" term="Colab"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[New React Compiler in React 19 ]]></title>
+        <title type="html"><![CDATA[New React Compiler in React 19]]></title>
         <id>https://centrodph.github.io/gerardo-perrucci/blog/react/new-compiler-react-19</id>
         <link href="https://centrodph.github.io/gerardo-perrucci/blog/react/new-compiler-react-19"/>
         <updated>2024-05-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The new React compiler introduced in React 19 it will significantly improve React development.]]></summary>
         <content type="html"><![CDATA[<p><strong>The new React compiler introduced in React 19 it will significantly improve React development.</strong></p>
-<p>The compiler is a novel tool that can automatically optimize your React application. It accomplishes this by thoroughly comprehending the code and applying optimizations based on React's principles. This can result in performance improvements, particularly for intricate applications.</p>
-<p>The compiler is still in its experimental phase, but it has the potential to revolutionize React development. Is interested to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.</p>
+<p>React's new compiler is an innovative tool designed to automatically optimize your React applications. By deeply understanding your code, the compiler applies optimizations grounded in React’s core principles. These optimizations can lead to significant performance enhancements, especially for complex applications.</p>
+<p>Currently in its experimental phase, the new compiler has the potential to revolutionize React development. It's particularly interesting to see how it will interact with the <code>inline</code> optimization technique used in React like memo, useMemo useCallback.</p>
+<p>The ongoing development and integration of the compiler promise exciting advancements in the efficiency and performance of React applications. As the tool matures, it could become a game-changer for developers seeking to build faster, more efficient applications.</p>
 <p>Some bullet points to consider:</p>
 <ul>
 <li>
@@ -62,11 +121,11 @@
 <p>The compiler is still in its experimental phase, but it has the potential to revolutionize React development.</p>
 </li>
 <li>
-<p>It will be interesting to see how it affects JIT (Just-In-Time) compilation, another optimization technique used in React.</p>
+<p>It will be interesting to see how it affects the <code>inline</code> optimization technique used in React like memo, useMemo useCallback.</p>
 </li>
 </ul>
 <p>Sure, according to the document (<a href="https://react.dev/learn/react-compiler" target="_blank" rel="noopener noreferrer">https://react.dev/learn/react-compiler</a>), the React compiler can optimize your React application in a few specific cases.</p>
-<p><strong>It can automatically memoize certain values or groups of values within your components and hooks.</strong> This means it can cache the results of functions so that they don't have to be recalculated every time the component renders if the inputs haven't changed.expand_more</p>
+<p><strong>It can automatically memoize certain values or groups of values within your components and hooks.</strong> This means it can cache the results of functions so that they don't have to be recalculated every time the component renders if the inputs haven't changed.</p>
 <p>In addition, the compiler can skip over re-rendering components that haven't changed. For instance, if a parent component re-renders, it won't necessarily force all of its child components to re-render as well. Finally, is important to note that the code is expected to follow the <strong>React Rules</strong> in order to work properly with the compiler. Learn more about the React Rules: <a href="https://react.dev/reference/rules" target="_blank" rel="noopener noreferrer">https://react.dev/reference/rules</a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xo-ddmNGjY8?si=EfLo6F1IM1O7PUll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content>
         <author>
