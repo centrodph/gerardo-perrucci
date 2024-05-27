@@ -3,6 +3,7 @@ slug: machine-learning/machine-learning-process
 title: "Machine Learning Process: A Comprehensive Guide"
 authors: [me]
 tags: [Machine Learning, Data Preprocessing, Modeling, Evaluation]
+image: ./ml-process.png
 ---
 
 # Understanding the Machine Learning Process: A Comprehensive Guide
