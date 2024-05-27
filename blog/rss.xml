@@ -9,54 +9,137 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Machine Learning: Feature Scaling]]></title>
+            <link>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process</link>
+            <guid>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process</guid>
+            <pubDate>Mon, 27 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imagine you're a teacher and your students are working on a group project. One student is a math whiz, another excels at writing, and a third is a history buff. If you grade each section based on the individual's absolute strengths, the math whiz would dominate the score, even if the writing and history were excellent. This is similar to what can happen in machine learning with features (data points) on vastly different scales.]]></description>
+            <content:encoded><![CDATA[<p>Imagine you're a teacher and your students are working on a group project. One student is a math whiz, another excels at writing, and a third is a history buff. If you grade each section based on the individual's absolute strengths, the math whiz would dominate the score, even if the writing and history were excellent. This is similar to what can happen in machine learning with features (data points) on vastly different scales.</p>
+<p><strong>Feature scaling</strong> is a data pre-processing technique that addresses this issue. It essentially standardizes the range of features in your dataset, ensuring all features contribute equally during model training. Let's delve deeper into why and how this works.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-scale">Why Scale?<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#why-scale" class="hash-link" aria-label="Direct link to Why Scale?" title="Direct link to Why Scale?">​</a></h3>
+<ul>
+<li><strong>Fair Play for All Features:</strong> Features with larger values can overshadow those with smaller ones, even if the smaller ones hold valuable information. Scaling creates a level playing field.</li>
+<li><strong>Distance Matters:</strong> Many machine learning algorithms rely on calculating distances between data points. Feature scaling ensures these distances accurately reflect the underlying relationships.</li>
+<li><strong>Faster &amp; More Efficient Learning:</strong> By putting features on a similar scale, the learning algorithm can converge (find an optimal solution) faster and more efficiently.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="normalization-vs-standardization-two-sides-of-the-scaling-coin">Normalization vs. Standardization: Two Sides of the Scaling Coin<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#normalization-vs-standardization-two-sides-of-the-scaling-coin" class="hash-link" aria-label="Direct link to Normalization vs. Standardization: Two Sides of the Scaling Coin" title="Direct link to Normalization vs. Standardization: Two Sides of the Scaling Coin">​</a></h3>
+<p>Normalization and standardization are two common feature scaling techniques, and the terms are sometimes used interchangeably. However, there's a subtle difference:</p>
+<ul>
+<li>
+<p><strong>Normalization:</strong> This technique scales features to a specific range, typically between 0 and 1 (Min-Max Scaling) or -1 and 1. It's useful when you know the data distribution or want to bound values within a specific range.</p>
+<ul>
+<li>Formula:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#d6deeb;--prism-background-color:#011627"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#d6deeb;background-color:#011627"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#d6deeb"><span class="token plain">X_scaled = (X - min(X)) / (max(X) - min(X))</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->Here,
+_ X_scaled is the normalized feature
+_ X is the original feature value
+_ min(X) is the minimum value in the feature
+_ max(X) is the maximum value in the feature</li>
+</ul>
+</li>
+<li>
+<p><strong>Standardization:</strong> This technique transforms features to have a mean of 0 and a standard deviation of 1 (Z-score normalization). It assumes a Gaussian (bell-shaped) distribution for the data and emphasizes outliers more than normalization.</p>
+<ul>
+<li>Formula:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#d6deeb;--prism-background-color:#011627"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#d6deeb;background-color:#011627"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#d6deeb"><span class="token plain">X_scaled = (X - mean(X)) / std(X)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->Here,
+_ X_scaled is the standardized feature
+_ X is the original feature value
+_ mean(X) is the average of all values in the feature
+_ std(X) is the standard deviation of the feature</li>
+</ul>
+</li>
+</ul>
+<p><strong>Choosing the Right Technique:</strong></p>
+<p>The best technique depends on your data and the specific algorithm you're using. Here's a general guideline:</p>
+<ul>
+<li>Use Min-Max scaling if the data distribution is unknown or outliers are not a concern.</li>
+<li>Use standardization (Z-score) if the data is assumed to be Gaussian distributed or you want to emphasize the impact of outliers.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<p>Imagine a dataset with two features: house price (in millions) and distance from a school (in meters). Without scaling, the massive price range would overpower the distance information. Scaling levels the field, allowing the model to learn from both features effectively.</p>
+<p><strong>Further Learning:</strong></p>
+<ul>
+<li><a href="https://towardsdatascience.com/what-is-feature-scaling-why-is-it-important-in-machine-learning-2854ae877048" target="_blank" rel="noopener noreferrer">Feature Scaling and Why Does Machine Learning Need It</a></li>
+<li><a href="https://www.geeksforgeeks.org/ml-feature-scaling-part-2/" target="_blank" rel="noopener noreferrer">Feature Engineering: Scaling, Normalization, and Standardization</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" rel="noopener noreferrer">Essence of Linear Algebra</a></li>
+</ul>
+<p>Remember, feature scaling is a crucial step in building robust and accurate machine learning models. By ensuring all features are on the same page, you can empower your models to learn from your data more effectively.</p>
+<p><strong>Choosing the Right Technique:</strong></p>
+<p>The best technique depends on your data and the specific algorithm you're using. Here's a general guideline:</p>
+<ul>
+<li>Use <code>normalization</code> scaling if the data distribution is unknown or outliers are not a concern.</li>
+<li>Use <code>standardization</code> (Z-score) if the data is assumed to be Gaussian distributed or you want to emphasize the impact of outliers.</li>
+</ul>
+<p>I hope this addition clarifies the concepts of normalization and standardization with their respective formulas!</p>]]></content:encoded>
+            <category>Machine Learning</category>
+            <category>Data Preprocessing</category>
+            <category>Feature Scaling</category>
+        </item>
+        <item>
             <title><![CDATA[Machine Learning Process: A Comprehensive Guide]]></title>
             <link>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process</link>
             <guid>https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process</guid>
             <pubDate>Mon, 27 May 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Machine learning (ML) has become a cornerstone of modern technology, driving advancements in various fields such as healthcare, finance, and transportation. To build effective ML models, it's essential to understand the three main steps in the machine learning process: Data Preprocessing, Modeling, and Evaluation. This article breaks down these steps, detailing the sub-steps involved and providing references for further reading and understanding.]]></description>
-            <content:encoded><![CDATA[<p>Machine learning (ML) has become a cornerstone of modern technology, driving advancements in various fields such as healthcare, finance, and transportation. To build effective ML models, it's essential to understand the three main steps in the machine learning process: Data Preprocessing, Modeling, and Evaluation. This article breaks down these steps, detailing the sub-steps involved and providing references for further reading and understanding.</p>
-<p><img decoding="async" loading="lazy" alt="Machine Learning Process" src="https://centrodph.github.io/gerardo-perrucci/assets/images/ml-process-52fb963fdb615006e0c3bd3cfb5b3f50.png" width="1600" height="800" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-data-preprocessing">1. Data Preprocessing<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#1-data-preprocessing" class="hash-link" aria-label="Direct link to 1. Data Preprocessing" title="Direct link to 1. Data Preprocessing">​</a></h2>
-<p>Data preprocessing is the first and arguably the most crucial step in the machine learning pipeline. This step ensures that the data is clean, consistent, and suitable for the modeling process.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
-<ol>
-<li><strong>Data Collection</strong>: Gathering relevant data from various sources. This can include databases, APIs, and web scraping.</li>
-<li><strong>Data Cleaning</strong>: Removing or correcting any inaccuracies in the data, such as missing values, outliers, and duplicates.</li>
-<li><strong>Data Transformation</strong>: Converting data into a suitable format for analysis, which might involve normalization, standardization, or encoding categorical variables.</li>
-<li><strong>Data Splitting</strong>: Dividing the data into training, validation, and test sets to evaluate the model's performance.</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+            <content:encoded><![CDATA[<p>Imagine you're a teacher and your students are working on a group project. One student is a math whiz, another excels at writing, and a third is a history buff. If you grade each section based on the individual's absolute strengths, the math whiz would dominate the score, even if the writing and history were excellent. This is similar to what can happen in machine learning with features (data points) on vastly different scales.</p>
+<p><strong>Feature scaling</strong> is a data pre-processing technique that addresses this issue. It essentially standardizes the range of features in your dataset, ensuring all features contribute equally during model training. Let's delve deeper into why and how this works.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-scale">Why Scale?<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#why-scale" class="hash-link" aria-label="Direct link to Why Scale?" title="Direct link to Why Scale?">​</a></h3>
 <ul>
-<li><a href="https://scikit-learn.org/stable/modules/preprocessing.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Data Preprocessing</a></li>
-<li><a href="https://www.kaggle.com/learn/data-cleaning" target="_blank" rel="noopener noreferrer">Kaggle Data Preprocessing Tutorial</a></li>
+<li><strong>Fair Play for All Features:</strong> Features with larger values can overshadow those with smaller ones, even if the smaller ones hold valuable information. Scaling creates a level playing field.</li>
+<li><strong>Distance Matters:</strong> Many machine learning algorithms rely on calculating distances between data points. Feature scaling ensures these distances accurately reflect the underlying relationships.</li>
+<li><strong>Faster &amp; More Efficient Learning:</strong> By putting features on a similar scale, the learning algorithm can converge (find an optimal solution) faster and more efficiently.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-modeling">2. Modeling<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#2-modeling" class="hash-link" aria-label="Direct link to 2. Modeling" title="Direct link to 2. Modeling">​</a></h2>
-<p>Once the data is preprocessed, the next step is to build and train the machine learning model. This involves selecting the appropriate algorithm and fine-tuning it to achieve the best performance.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps-1">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps-1" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
-<ol>
-<li><strong>Algorithm Selection</strong>: Choosing a machine learning algorithm based on the problem type (e.g., regression, classification, clustering).</li>
-<li><strong>Model Training</strong>: Feeding the training data into the algorithm to learn the underlying patterns and relationships.</li>
-<li><strong>Hyperparameter Tuning</strong>: Adjusting the algorithm's parameters to optimize performance. This can be done using techniques like grid search or random search.</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references-1">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references-1" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="normalization-vs-standardization-two-sides-of-the-scaling-coin">Normalization vs. Standardization: Two Sides of the Scaling Coin<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#normalization-vs-standardization-two-sides-of-the-scaling-coin" class="hash-link" aria-label="Direct link to Normalization vs. Standardization: Two Sides of the Scaling Coin" title="Direct link to Normalization vs. Standardization: Two Sides of the Scaling Coin">​</a></h3>
+<p>Normalization and standardization are two common feature scaling techniques, and the terms are sometimes used interchangeably. However, there's a subtle difference:</p>
 <ul>
-<li><a href="https://scikit-learn.org/stable/supervised_learning.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Supervised Learning</a></li>
-<li><a href="https://www.tensorflow.org/guide/keras/train_and_evaluate" target="_blank" rel="noopener noreferrer">TensorFlow Model Training Guide</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-evaluation">3. Evaluation<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#3-evaluation" class="hash-link" aria-label="Direct link to 3. Evaluation" title="Direct link to 3. Evaluation">​</a></h2>
-<p>Evaluation is the final step in the machine learning process, where the model's performance is assessed to ensure it meets the desired criteria. This involves using various metrics to measure the accuracy, precision, recall, and other relevant aspects of the model.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sub-steps-2">Sub-steps:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#sub-steps-2" class="hash-link" aria-label="Direct link to Sub-steps:" title="Direct link to Sub-steps:">​</a></h3>
-<ol>
-<li><strong>Model Validation</strong>: Using the validation set to tune the model and prevent overfitting.</li>
-<li><strong>Performance Metrics</strong>: Calculating metrics such as accuracy, precision, recall, F1 score, and AUC-ROC to evaluate the model's effectiveness.</li>
-<li><strong>Cross-Validation</strong>: Implementing techniques like k-fold cross-validation to ensure the model's robustness and reliability.</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references-2">References:<a href="https://centrodph.github.io/gerardo-perrucci/blog/machine-learning/machine-learning-process#references-2" class="hash-link" aria-label="Direct link to References:" title="Direct link to References:">​</a></h3>
+<li>
+<p><strong>Normalization:</strong> This technique scales features to a specific range, typically between 0 and 1 (Min-Max Scaling) or -1 and 1. It's useful when you know the data distribution or want to bound values within a specific range.</p>
 <ul>
-<li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener noreferrer">Scikit-Learn Documentation on Model Evaluation</a></li>
-<li><a href="https://www.youtube.com/watch?v=85dtiMz9tSo" target="_blank" rel="noopener noreferrer">YouTube Video on Model Evaluation Metrics</a></li>
+<li>Formula:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#d6deeb;--prism-background-color:#011627"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#d6deeb;background-color:#011627"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#d6deeb"><span class="token plain">X_scaled = (X - min(X)) / (max(X) - min(X))</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->Here,
+_ X_scaled is the normalized feature
+_ X is the original feature value
+_ min(X) is the minimum value in the feature
+_ max(X) is the maximum value in the feature</li>
 </ul>
-<p>Understanding the machine learning process is fundamental to developing effective models that can make accurate predictions and provide valuable insights.</p>]]></content:encoded>
+</li>
+<li>
+<p><strong>Standardization:</strong> This technique transforms features to have a mean of 0 and a standard deviation of 1 (Z-score normalization). It assumes a Gaussian (bell-shaped) distribution for the data and emphasizes outliers more than normalization.</p>
+<ul>
+<li>Formula:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#d6deeb;--prism-background-color:#011627"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#d6deeb;background-color:#011627"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#d6deeb"><span class="token plain">X_scaled = (X - mean(X)) / std(X)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->Here,
+_ X_scaled is the standardized feature
+_ X is the original feature value
+_ mean(X) is the average of all values in the feature
+_ std(X) is the standard deviation of the feature</li>
+</ul>
+</li>
+</ul>
+<p><strong>Choosing the Right Technique:</strong></p>
+<p>The best technique depends on your data and the specific algorithm you're using. Here's a general guideline:</p>
+<ul>
+<li>Use Min-Max scaling if the data distribution is unknown or outliers are not a concern.</li>
+<li>Use standardization (Z-score) if the data is assumed to be Gaussian distributed or you want to emphasize the impact of outliers.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<p>Imagine a dataset with two features: house price (in millions) and distance from a school (in meters). Without scaling, the massive price range would overpower the distance information. Scaling levels the field, allowing the model to learn from both features effectively.</p>
+<p><strong>Further Learning:</strong></p>
+<ul>
+<li><a href="https://towardsdatascience.com/what-is-feature-scaling-why-is-it-important-in-machine-learning-2854ae877048" target="_blank" rel="noopener noreferrer">Feature Scaling and Why Does Machine Learning Need It</a></li>
+<li><a href="https://www.geeksforgeeks.org/ml-feature-scaling-part-2/" target="_blank" rel="noopener noreferrer">Feature Engineering: Scaling, Normalization, and Standardization</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" rel="noopener noreferrer">Essence of Linear Algebra</a></li>
+</ul>
+<p>Remember, feature scaling is a crucial step in building robust and accurate machine learning models. By ensuring all features are on the same page, you can empower your models to learn from your data more effectively.</p>
+<p><strong>Choosing the Right Technique:</strong></p>
+<p>The best technique depends on your data and the specific algorithm you're using. Here's a general guideline:</p>
+<ul>
+<li>Use <code>normalization</code> scaling if the data distribution is unknown or outliers are not a concern.</li>
+<li>Use <code>standardization</code> (Z-score) if the data is assumed to be Gaussian distributed or you want to emphasize the impact of outliers.</li>
+</ul>
+<p>I hope this addition clarifies the concepts of normalization and standardization with their respective formulas!</p>]]></content:encoded>
             <category>Machine Learning</category>
             <category>Data Preprocessing</category>
             <category>Modeling</category>
