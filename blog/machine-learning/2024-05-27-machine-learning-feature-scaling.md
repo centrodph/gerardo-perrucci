@@ -27,9 +27,11 @@ Normalization and standardization are two common feature scaling techniques, and
 - **Normalization:** This technique scales features to a specific range, typically between 0 and 1 (Min-Max Scaling) or -1 and 1. It's useful when you know the data distribution or want to bound values within a specific range.
 
   - Formula:
+
     ```
     X_scaled = (X - min(X)) / (max(X) - min(X))
     ```
+
     Here,
     _ X_scaled is the normalized feature
     _ X is the original feature value
@@ -39,9 +41,11 @@ Normalization and standardization are two common feature scaling techniques, and
 - **Standardization:** This technique transforms features to have a mean of 0 and a standard deviation of 1 (Z-score normalization). It assumes a Gaussian (bell-shaped) distribution for the data and emphasizes outliers more than normalization.
 
   - Formula:
+
     ```
     X_scaled = (X - mean(X)) / std(X)
     ```
+
     Here,
     _ X_scaled is the standardized feature
     _ X is the original feature value
