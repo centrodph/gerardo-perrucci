@@ -10,6 +10,10 @@ image: ./ml-pandas-iloc.png
 
 The `iloc` indexer in pandas is a powerful tool for data selection, slicing, and manipulation, essential for preparing datasets for machine learning tasks. Here's a comprehensive guide to help you master `iloc`.
 
+You can download the .ipynb file from [here](https://github.com/centrodph/ml/blob/main/data-processing/Pandas%20iloc%20Cheatsheet%20for%20Machine%20Learning.ipynb)
+
+![Machine Learning Pandas iloc Cheatsheet](./ml-pandas-iloc.png)
+
 ## Table of Contents
 
 1. **Introduction to `iloc`**
@@ -47,11 +51,13 @@ print(df)
 
 ```
 
+```
        A  B   C   D
     0  1  5   9  13
     1  2  6  10  14
     2  3  7  11  15
     3  4  8  12  16
+```
 
 ## 2. Basic Usage
 
@@ -62,25 +68,27 @@ To select rows using `iloc`, you specify the row index.
 ```python
 # Select the first row
 print(df.iloc[0])
-
-
 ```
 
+```
     A     1
     B     5
     C     9
     D    13
     Name: 0, dtype: int64
+```
 
 ```python
 # Select the first three rows
 print(df.iloc[:3])
 ```
 
+```
        A  B   C   D
     0  1  5   9  13
     1  2  6  10  14
     2  3  7  11  15
+```
 
 ### Selecting Columns
 
@@ -92,22 +100,26 @@ print(df.iloc[:, 0])
 
 ```
 
+```
     0    1
     1    2
     2    3
     3    4
     Name: A, dtype: int64
+```
 
 ```python
 # Select the first two columns
 print(df.iloc[:, :2])
 ```
 
+```
        A  B
     0  1  5
     1  2  6
     2  3  7
     3  4  8
+```
 
 ## 3. Advanced Indexing
 
@@ -120,9 +132,11 @@ You can slice both rows and columns simultaneously.
 print(df.iloc[:2, :2])
 ```
 
+```
        A  B
     0  1  5
     1  2  6
+```
 
 ### Selecting Specific Rows and Columns
 
@@ -133,9 +147,11 @@ Specify exact row and column indices.
 print(df.iloc[[0, 2], [1, 3]])
 ```
 
+```
        B   D
     0  5  13
     2  7  15
+```
 
 ## 4. Conditional Selection
 
@@ -153,10 +169,12 @@ df_cond = pd.DataFrame({
 print(df_cond[df_cond['A'] > 2].iloc[:, [0, 2]])  # Select columns 'A' and 'C'
 ```
 
+```
        A    C
     2  3  300
     3  4  400
     4  5  500
+```
 
 ## 5. Modifying Data
 
@@ -172,6 +190,7 @@ df.iloc[:, 0] = 0
 print(df)
 ```
 
+```
        A  B   C   D
     0  0  5   9  13
     1  2  6  10  14
@@ -182,6 +201,7 @@ print(df)
     1  0  6  10  14
     2  0  7  11  15
     3  0  8  12  16
+```
 
 ## 6. Practical Machine Learning Examples
 
@@ -207,6 +227,7 @@ print("Features:\n", X)
 print("Target:\n", y)
 ```
 
+```
     Features:
         Feature1  Feature2
     0         1        10
@@ -221,6 +242,7 @@ print("Target:\n", y)
     3    1
     4    0
     Name: Target, dtype: int64
+```
 
 ### Handling Missing Data
 
@@ -239,11 +261,13 @@ df_missing.iloc[:, :2] = df_missing.iloc[:, :2].fillna(0)
 print(df_missing)
 ```
 
+```
          A    B     C
     0  1.0  5.0   NaN
     1  2.0  0.0  10.0
     2  0.0  7.0  11.0
     3  4.0  8.0  12.0
+```
 
 ### Data Normalization
 
@@ -265,12 +289,14 @@ df_norm.iloc[:, :2] = scaler.fit_transform(df_norm.iloc[:, :2])
 print(df_norm)
 ```
 
+```
        Feature1  Feature2
     0      0.00      0.00
     1      0.25      0.25
     2      0.50      0.50
     3      0.75      0.75
     4      1.00      1.00
+```
 
 Certainly! Here are some references to official documentation and YouTube videos that can help you learn more about using the `iloc` indexer in pandas for machine learning:
 
