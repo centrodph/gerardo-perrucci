@@ -10,7 +10,7 @@ image: ./ml-visualization-missing-values-heatmap.png
 
 Handling missing data is crucial in data analysis and machine learning. Visualizing missing data helps to understand the extent and pattern of missingness, which can inform the choice of strategies for dealing with it. In this guide, we'll use Python and the `missingno` library to visualize missing data in a dataset.
 
-![Matrix Plot](./ml-visualization-missing-values-matrix.png)
+![Visualization missing values with missingno](./ml-visualization-missing-values.png)
 
 You can download the Jupiter notebook of the example [Visualizing Missing Data](https://github.com/centrodph/ml/blob/main/data-processing/Visualization%20missing%20data%20techniques.ipynb)
 
