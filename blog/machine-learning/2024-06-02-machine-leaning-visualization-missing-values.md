@@ -265,4 +265,4 @@ References:
 - [Missingno Documentation](https://github.com/ResidentMario/missingno)
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
 - [NumPy Documentation](https://numpy.org/doc/stable/)
-- [Mediuam article](https://medium.com/@mahnoorsalman96/checking-for-missing-values-for-machine-learning-bb4c263a6555)
+- [Medium article](https://medium.com/@mahnoorsalman96/checking-for-missing-values-for-machine-learning-bb4c263a6555)
