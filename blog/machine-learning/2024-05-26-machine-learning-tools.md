@@ -21,6 +21,8 @@ You can download R from the official website: https://www.r-project.org/
 
 Download RStudio from the official website: https://www.rstudio.com/products/rstudio/
 
+<!-- truncate -->
+
 ### Cloud Platform
 
 **Google Colab:** This fantastic platform offered by Google allows you to run Python or R code directly within your web browser. Colab provides free access to powerful hardware with GPUs (graphical processing units) that can significantly accelerate your ML computations, especially when dealing with large datasets. It's a great option if you don't have a powerful computer or prefer a cloud-based environment.

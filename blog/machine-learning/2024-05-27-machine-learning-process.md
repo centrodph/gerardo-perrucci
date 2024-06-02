@@ -12,6 +12,8 @@ Machine learning (ML) has become a cornerstone of modern technology, driving adv
 
 ![Machine Learning Process](./ml-process.png)
 
+<!-- truncate -->
+
 ## 1. Data Preprocessing
 
 Data preprocessing is the first and arguably the most crucial step in the machine learning pipeline. This step ensures that the data is clean, consistent, and suitable for the modeling process.

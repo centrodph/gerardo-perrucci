@@ -47,6 +47,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    maxHeadingLevel: 5,
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,

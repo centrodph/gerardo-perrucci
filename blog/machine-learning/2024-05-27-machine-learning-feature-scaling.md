@@ -12,6 +12,8 @@ Imagine you're a teacher and your students are working on a group project. One s
 
 ![Machine Learning Feature Scaling Source: someka.net](./ml-feature-scaling.webp)
 
+<!-- truncate -->
+
 **Feature scaling** is a data pre-processing technique that addresses this issue. It essentially standardizes the range of features in your dataset, ensuring all features contribute equally during model training. Let's delve deeper into why and how this works.
 
 ### Why Scale?

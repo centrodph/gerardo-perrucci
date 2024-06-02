@@ -14,6 +14,8 @@ You can download the .ipynb file from [here](https://github.com/centrodph/ml/blo
 
 ![Machine Learning Pandas iloc Cheatsheet](./ml-pandas-iloc.png)
 
+<!-- truncate -->
+
 ## Table of Contents
 
 1. **Introduction to `iloc`**

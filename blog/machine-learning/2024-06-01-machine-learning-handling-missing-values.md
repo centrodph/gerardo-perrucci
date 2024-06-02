@@ -14,7 +14,9 @@ Handling missing values is a crucial step in preparing data for machine learning
 
 You can check the full code in the [Jupyter Notebook](https://github.com/centrodph/ml/blob/main/data-processing/Machine%20Learning%20Handling%20Missing%20Values.ipynb)
 
-### Importing Libraries
+<!-- truncate -->x
+
+## Importing Libraries
 
 We begin by importing the necessary libraries for our data manipulation and analysis tasks.
 
@@ -31,7 +33,7 @@ References:
 - [NumPy Documentation](https://numpy.org/doc/stable/)
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
 
-### Reading the Data
+## Reading the Data
 
 We read the CSV file containing the NFL play-by-play data.
 
@@ -54,7 +56,7 @@ References:
 
 - [Pandas read_csv Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)
 
-### Inspecting the Data
+## Inspecting the Data
 
 To get an overview of the data format, we inspect the first few rows of the dataframe.
 
@@ -73,7 +75,7 @@ Output:
 4  2009-09-10  2009091000      1    1   4.0  13:27         14     3507           8.0          PIT  ...     NaN     0.461217     0.538783     0.558929     0.441071  0.461217  0.097712     NaN     NaN    2009
 ```
 
-### Counting Missing Values
+## Counting Missing Values
 
 We calculate the number of missing values in each column.
 
@@ -98,7 +100,7 @@ SideofField       528
 dtype: int64
 ```
 
-### Total Missing Values
+## Total Missing Values
 
 To understand the proportion of missing data, we calculate the total number of cells and the percentage of missing values.
 
@@ -119,7 +121,7 @@ total_cells 41584176
 percentage missing 27.66722370547874
 ```
 
-### Counting Non-Missing Values
+## Counting Non-Missing Values
 
 We can also count the non-missing values in each column.
 
@@ -144,7 +146,7 @@ Season      407688
 Length: 102, dtype: int64
 ```
 
-### Removing Rows with Missing Values
+## Removing Rows with Missing Values
 
 While not recommended, one way to handle missing values is to remove rows that contain them.
 
@@ -205,7 +207,7 @@ original columns: 102
 cleaned columns: 37
 ```
 
-### Subsetting the Data
+## Subsetting the Data
 
 To focus on a smaller portion of the dataset, we can create a subset.
 
@@ -225,7 +227,7 @@ Output:
 4  2.097796       NaN       NaN     0.461217     0.538783     0.558929     0.441071  0.461217  0.097712       NaN       NaN    2009
 ```
 
-### Basic Filling of Missing Values
+## Basic Filling of Missing Values
 
 A straightforward method for handling missing values is to fill them with a specific value, such as zero.
 
@@ -245,7 +247,7 @@ Output:
 4  2009-09-10  2009091000      1    1   4.0  13:27         14     3507           8.0          PIT  ...  0.000000     0.461217     0.538783     0.558929     0.441071  0.461217  0.097712  0.000000  0.000000    2009
 ```
 
-### Column-Based Filling
+## Column-Based Filling
 
 Another approach is to fill missing values based on the next valid observation in the column.
 
