@@ -1,0 +1,150 @@
+---
+slug: css/animate-transition-from-display-none
+title: "Animate transition from display: none to display: block"
+authors: [me]
+tags: [CSS, Animation, Transition, starting-style]
+---
+
+Animating elements from `display: none` to `display: block` has long been a challenge in CSS. The traditional `display` property doesn't support transitions, making smooth animations difficult. However, with the introduction of the `@starting-style` at-rule and other new CSS features, we now have powerful tools to create seamless transitions between these states.
+
+<!-- truncate -->
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/vmDEHAzj2XE?start=150"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+
+## The Challenge with display: none
+
+Traditionally, animating an element from `display: none` to `display: block` wasn't possible because:
+
+1. The `display` property is not animatable.
+2. When an element is `display: none`, it's removed from the document flow, making it impossible to transition its properties.
+
+## New CSS Features for Smooth Animations
+
+Chrome 116 and 117 introduced four new web platform features that enable smooth animations and transitions for discrete properties:
+
+1. Animating `display` and `content-visibility` on a keyframe timeline (Chrome 116+)
+2. The `transition-behavior` property with the `allow-discrete` keyword (Chrome 117+)
+3. The `@starting-style` rule for entry animations (Chrome 117+)
+4. The `overlay` property to control top-layer behavior during animations (Chrome 117+)
+
+Let's explore these features in detail.
+
+## Animating display in Keyframes
+
+From Chrome 116, you can use `display` and `content-visibility` in keyframe rules. Here's an example:
+
+```css
+.card {
+  animation: fade-out 0.5s forwards;
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+```
+
+This animation fades out the element and sets it to `display: none` at the end.
+
+## The transition-behavior Property
+
+To transition discrete properties like `display`, use the `allow-discrete` mode of the `transition-behavior` property:
+
+```css
+.card {
+  transition: opacity 0.25s, display 0.25s;
+  transition-behavior: allow-discrete;
+}
+
+.card.fade-out {
+  opacity: 0;
+  display: none;
+}
+```
+
+## The @starting-style Rule for Entry Animations
+
+The `@starting-style` rule allows you to define the initial state for entry animations:
+
+```css
+@starting-style {
+  .item {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.item {
+  height: 3rem;
+  display: grid;
+  overflow: hidden;
+  transition: opacity 0.5s, transform 0.5s, height 0.5s, display 0.5s allow-discrete;
+}
+```
+
+This setup creates a smooth entry animation from `height: 0` and `opacity: 0` to the final state.
+
+## Animating Elements to and from the Top Layer
+
+For elements like dialogs and popovers that use the top layer, you can use `@starting-style` and the `overlay` property for smooth animations:
+
+```css
+@starting-style {
+  dialog[open] {
+    translate: 0 100vh;
+  }
+}
+
+dialog[open] {
+  translate: 0 0;
+}
+
+dialog {
+  transition: translate 0.7s ease-out, overlay 0.7s ease-out allow-discrete, display 0.7s ease-out allow-discrete;
+  translate: 0 100vh;
+}
+```
+
+The `overlay` property ensures that the element stays in the top layer during the animation, preventing it from being clipped or covered by other elements.
+
+## CodePen Example
+
+Here's a CodePen demonstrating these techniques:
+
+[CodePen: Animate from display: none using @starting-style](https://codepen.io/your-username/pen/your-pen-id)
+
+## Browser Support
+
+As of 2024, these features are supported in most modern browsers, including Chrome, Edge, and Firefox. However, it's always a good idea to check [Can I use](https://caniuse.com/?search=starting-style) for the latest browser support information.
+
+## Fallback for Older Browsers
+
+For browsers that don't support these new features, you can use a JavaScript-based fallback:
+
+```javascript
+if (!CSS.supports('@starting-style {}')) {
+  // Fallback animation logic here
+}
+```
+
+## Conclusion
+
+The introduction of `@starting-style`, `transition-behavior: allow-discrete`, and the `overlay` property provides elegant solutions to the long-standing problem of animating elements from `display: none` to `display: block`. These features allow for smooth, performant transitions without the need for complex JavaScript workarounds.
+
+## References
+
+1. [CSS @starting-style - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
+2. [Animate Display None to Block - YouTube](https://www.youtube.com/watch?v=vmDEHAzj2XE)
+3. [Can I use: @starting-style](https://caniuse.com/?search=starting-style)
+4. [Four new CSS features for smooth entry and exit animations - Chrome Developers](https://developer.chrome.com/blog/entry-exit-animations#the_starting-style_rule_for_entry_animations)
